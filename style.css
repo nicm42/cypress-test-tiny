@@ -4,12 +4,14 @@
   perspective: 1000px;
   position: relative;
   transform-style: preserve-3d;
-  transition: rotate 500ms linear;
+  /* transition: rotate 500ms linear; */
+  transition: transform 500ms linear;
   width: 200px;
 }
 
 .card.show {
   rotate: y 180deg;
+  /* transform: rotateY(180deg); */
 }
 
 .card-front,
@@ -30,4 +32,5 @@
 .card-back {
   background-color: aliceblue;
   rotate: y 180deg;
+  /* transform: rotateY(180deg); */
 }
